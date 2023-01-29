@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+* {
+  --gradient: linear-gradient(
+    45deg,
+    rgb(16, 17, 15),
+    rgba(218, 130, 105, 0.067),
+    #a04848,
+    #090912,
+    #00eeb5
+);
+margin: 0;
+padding: 0;
+font-size: 16px;
+font-weight: bold;
+line-height: 1.5;
+letter-spacing: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  width: 155rem;
+  height: 219.25rem;
+  border: 0.5 solid rgb(45, 22, 160);
+  margin: 3rem auto;
+}
+
+
+/*  ------------- SECTION 1 --------------- */
+.section1 {
+  display: flex;
+
+}
+
+img {
+  width: 46.5rem;
+  height: 50rem;
+}
+
+.objective {
+  width: 108.5rem;
+  height: 50rem;
+  /* background-color: rgb(196, 20, 20); */
+}
+.objectives {
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+.objective p {
+  width: 80%;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+}
+
+.objective hr {
+  width: 12rem;
+  margin-left: 5rem;
+}
+.objective h1 {
+  font-size: 4rem;
+padding: 7rem 0 1rem 5rem;
+}
+
+/*  ------------- SECTION 2 --------------- */
+.section2 {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.104);
+}
+.section2s {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 0 10rem;
+}
+.section2 p {
+padding-top: 3.8rem;
+font-size: 2.5rem;
+}
+
+.section2 .icons {
+font-size: 3.8rem;
+padding-top: 4.5rem;
+}
+.add,
+.tel,
+.email,
+.web {
+  display: flex;
+  gap: 1rem;
+}
+
+/*  ------------- SECTION 3 --------------- */
+.section3 {
+  display: flex;
+}
+.profile hr {
+  display: flex;
+  width: 12rem;
+  margin: 2rem 0 2rem 0;
+  margin-left: 70%;
+}
+.profile p{
+  color: rgb(172, 167, 167);
+}
+.profile {
   color: white;
+  width: 30%;
+  height: 143.75rem;
+  background-color: rgba(0, 0, 0, 0.858);
+}
+.profiles {
+  text-align: right;
+  padding: 5rem 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.skills {
+  width: 70%;
+  height: 143.75rem;
+  /* background-color: beige; */
+}
+.skills h1 {
+  font-size: 4rem;
+  margin: 2rem 7rem;
+}
+.skills hr {
+  display: flex;
+  background-color: black;
+  width: 12rem;
+  height: 2px;
+  margin: 2rem 7rem ;
+}
+.skills ul {
+  width: 80%;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  max-height: 133rem;
+}
+.skills ul li {
+  font-size: 3rem;
+  line-height: 2;
+  max-height: 133rem;
+}
+.nameWork {
+  padding-bottom: 7rem;
+}
+.nameWork h1 {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+}
+ .nameWork h5 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: rgb(172, 167, 167);
+}
+.education h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00eeb5;
+}
+.education h2 {
+  font-size: 2rem;
+  color: #00eeb5;
+}
+.education p {
+  font-size: 2rem;
+  color: rgb(172, 167, 167);
+
+}
+  
+.hobbies h3{
+  font-size: 3rem;
+  padding-top: 5rem;
+  text-transform: uppercase;
+  color: #00eeb5;
+}
+.hobbies p {
+  display: flex;
+  float: right;
+  font-size: 3rem;
+  color: rgb(172, 167, 167);
+}
+.hobbies p.hr::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 0 2rem;
+  flex-direction: row;
+  content: "";
+  transform: translate(-5px);
+  background-color: white;
+  width: 1px;
+  height: 3rem;
+  color: rgb(172, 167, 167);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
